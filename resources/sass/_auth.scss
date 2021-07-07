@@ -1,0 +1,319 @@
+//@import "auth/login";
+//@import "auth/reg";
+
+.p-auth{
+    //padding-top: 60px;
+    padding-bottom: 100px;
+    background: #F3F8FF;
+
+
+    .p-auth__form{
+        padding-top: 30px;
+    }
+
+    .p-auth__form-block-submit{
+
+    }
+    .p-auth__form-block-submit-btn{
+        width: 100%;
+        //font-weight: 600;
+    }
+
+
+    @include media-breakpoint-down(md){
+        .form-control__label{
+         font-size: 14px;
+        }
+        .form-checkbox-label__default{
+            font-size: 14px;
+        }
+    }
+
+    .p-auth__form-block {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #CCCCCC;
+        background: #fff;
+        //padding: 40px 60px 0px 60px;
+        width: 500px;
+        max-width: 100%;
+        @include media-breakpoint-down(md){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .p-auth__form-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: #2D3142;
+        padding-bottom: 40px;
+        padding-top: 40px;
+
+
+
+    }
+
+
+    .p-auth__form-row{
+        margin-right: -20px;
+        margin-left: -20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p-auth__form-col{
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        @include media-breakpoint-down(md){
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+    }
+    .p-auth__form-col-login{
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+        @include media-breakpoint-down(md){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+
+
+    .p-auth__form-block-submit{
+
+    }
+    .p-auth__form-block-submit-btn{
+        width: 100%;
+    }
+
+
+}
+.p-auth-reg {
+    .p-auth-reg__form-block {
+         margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #CCCCCC;
+        background-color: #fff;
+        //padding: 40px 60px 0px 60px;
+        width: 500px;
+        max-width: 100%;
+        @include media-breakpoint-down(md){
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    .p-auth-reg__form-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: #2D3142;
+        padding-bottom: 40px;
+        padding-top: 40px;
+
+
+
+    }
+
+
+    .p-auth-reg__form-row{
+        margin-right: -20px;
+        margin-left: -20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p-auth-reg__form-col{
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        @include media-breakpoint-down(md){
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+    }
+    .p-auth-reg__form-col-login{
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+
+
+    .p-auth-reg__form-block-submit{
+
+    }
+    .p-auth-reg__form-block-submit-btn{
+        width: 100%;
+    }
+    .p-auth-reg__social-block{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .p-auth-reg__social-title{
+        font-size: 16px;
+        line-height: 20px;
+        color: #2D3142;
+    }
+    .p-auth-reg__social-links{}
+    .p-auth-reg__social-facebook{
+        margin-right: 16px;
+        text-decoration: none !important;
+    }
+    .p-auth-reg__social-google{
+        text-decoration: none !important;
+    }
+    .p-auth-reg__login-link{}
+    .p-auth-reg__label-rules{
+
+    }
+    .p-auth-reg__link-rules{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2962FF;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.p-auth-login {
+    .p-auth-login__form-block {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #CCCCCC;
+        background: #fff;
+        //padding: 40px 60px 0px 60px;
+        width: 500px;
+        max-width: 100%;
+        @include media-breakpoint-down(md){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .p-auth-login__form-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: #2D3142;
+        padding-bottom: 40px;
+        padding-top: 40px;
+
+
+
+    }
+
+
+    .p-auth-login__form-row{
+        margin-right: -20px;
+        margin-left: -20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p-auth-login__form-col{
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        @include media-breakpoint-down(md){
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+    }
+    .p-auth-login__form-col-login{
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+        @include media-breakpoint-down(md){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+
+
+    .p-auth-login__form-block-submit{
+
+    }
+    .p-auth-login__form-block-submit-btn{
+        width: 100%;
+    }
+    .p-auth-login__social-block{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .p-auth-login__social-title{
+        font-size: 16px;
+        line-height: 20px;
+        color: #2D3142;
+        @include media-breakpoint-down-370{
+            font-size: 14px;
+        }
+    }
+    .p-auth-login__social-links{}
+    .p-auth-login__social-facebook{
+        margin-right: 16px;
+    }
+    .p-auth-login__social-google{}
+    .p-auth-login__login-link{}
+    .p-auth-login__label-remember{
+
+    }
+    .p-auth-login__link-forget-password{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2962FF;
+        float: right;
+    }
+
+    .p-auth-login__form-group-remember{}
+    .p-auth-login__form-group-remember-checkbox{
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down-370{
+            .p-auth-login__label-remember , .p-auth-login__link-forget-password {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+}
+
+.p-auth-login__link-resend{
+
+}
+
+
+

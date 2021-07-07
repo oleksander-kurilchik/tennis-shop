@@ -1,0 +1,133 @@
+.p-page-contacts{
+    background: #F2F2F2;
+    .p-page-contacts__content{
+
+    }
+    .p-page-contacts__map-block{
+        padding: 20px;
+        background: #FFFFFF;
+        border: 1px solid #DADFF2;
+        height: 100%;
+        //@include media-breakpoint-down(md){
+        //    padding: 20px 30px 30px 30px;
+        //}
+    }
+
+    .p-page-contacts__contacts-info{
+        display: flex;
+        padding: 50px 30px 00px 30px;
+        flex-wrap: wrap;
+        @include media-breakpoint-down(md){
+            padding-right: 0;
+            padding-left: 0;
+            & > * {
+
+            }
+        }
+    }
+    .p-page-contacts__info-item{
+        padding-right: 20px;
+        padding-left: 20px;
+        flex: 1;
+    }
+    .p-page-contacts__info-item-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #2D3142;
+        padding-bottom: 20px;
+    }
+    .p-page-contacts__info-item-description{
+        font-size: 16px;
+        line-height: 24px;
+        color: #2D3142;
+        p{
+            margin-bottom: 12px;
+        }
+    }
+    .p-page-contacts__info-email{
+        font-weight: 500;
+    }
+    .p-page-contacts__address{
+        width: #{5/14*100%};
+        flex-basis: #{5/14*100%};
+    }
+    .p-page-contacts__work-schedule{
+        width: #{4/14*100%};
+        flex-basis: #{4/14*100%};
+    }
+    .p-page-contacts__social{
+        width: #{5/14*100%};
+        flex-basis: #{5/14*100%};
+    }
+
+    .p-page-contacts__address,   .p-page-contacts__work-schedule , .p-page-contacts__social
+    {
+        padding-bottom: 20px;
+        @include media-breakpoint-down(md){
+            width: 100%;
+            flex-basis: 100%;
+        }
+
+    }
+
+    .p-page-contacts__social-list{
+        display: flex;
+        //justify-content: flex-end;
+    }
+    .p-page-contacts__social-item{
+        padding-right: 16px;
+    }
+    .p-page-contacts__social-link{}
+    .p-page-contacts__social-img{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .p-page-contacts__feedback{
+        padding: 40px 60px 60px 60px;
+        background: #FFFFFF;
+        border: 1px solid #DADFF2;
+        height: 100%;
+        @include media-breakpoint-down(md){
+            padding: 20px 30px 30px 30px;
+        }
+    }
+    .p-page-contacts__feedback-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        color: #2D3142;
+        padding-bottom: 40px;
+        @include media-breakpoint-down(md){
+            padding-bottom: 24px;
+        }
+    }
+    .p-page-contacts__feedback-form{
+
+    }
+
+
+}

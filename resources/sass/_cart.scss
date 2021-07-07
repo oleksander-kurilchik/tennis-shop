@@ -1,0 +1,292 @@
+.p-cart{
+    background: #F2F2F2;
+    padding-bottom: 100px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 70px;
+    }
+    @include media-breakpoint-down(xs){
+        padding-bottom: 30px;
+    }
+    .p-cart__content{}
+    .p-cart__content{}
+    .p-cart__content{}
+    .p-cart__content{}
+    .p-cart__content-empty-block{
+        padding: 90px 60px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background: #FFFFFF;
+        border: 1px solid #DADFF2;
+        height: 100%;
+        //@include media-breakpoint-down(md){
+        //    padding: 20px 30px 30px 30px;
+        //}
+    }
+    .p-cart__content-empty-block-title{
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 24px;
+        color: #2D3142;
+        padding-bottom: 20px;
+
+    }
+    .p-cart__content-empty-block-description{
+        font-size: 16px;
+        line-height: 1.3;
+        color: #2D3142;
+     }
+
+
+
+    .p-cart__form-radio{
+        padding-bottom: 12px;
+    }
+    .p-cart__select-cities{
+        padding-top: 15px;
+    }
+
+    .p-cart__to-pay{
+    display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+    .p-cart__to-pay-title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1;
+        color: #2D3142;
+    }
+    .p-cart__to-pay-value{
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1;
+        text-align: right;
+
+        color: #2962FF;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+.b-cart-item{
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+    &:last-child{
+        border-bottom: 1px solid #CCCCCC;
+    }
+    background: #fff;
+    @include media-breakpoint-down(md){
+        padding-bottom: 30px;
+    }
+    .b-cart-item__row{
+        margin-right: -20px;
+        margin-left: -20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .b-cart-item__row-item{
+        padding-left: 20px;
+        padding-right: 20px;
+        @include media-breakpoint-down(md){
+            padding-bottom: 10px;
+        }
+    }
+    .b-cart-item__row-item-logo{
+        display: flex;
+        align-items: center;
+        width: 25%;
+        padding-left: 40px;
+        @include media-breakpoint-down(md){
+            width: 40%;
+        }
+    }
+    .b-cart-item__logo{
+        //width: 50%;
+        //padding-right: 20px;
+    }
+    .b-cart-item__logo-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .b-cart-item__row-item-title{
+        width: 33%;
+        @include media-breakpoint-down(md){
+            width: 60%;
+        }
+    }
+    .b-cart-item__title-block{
+        //width: 50%;
+        //padding-left: 20px;
+    }
+    .b-cart-item__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.3;
+        color: #2D3142;
+        padding-bottom: 14px;
+        @include media-breakpoint-down(md){
+            font-size: 16px;
+        }
+    }
+    .b-cart-item__title-link{
+        color: #2D3142;
+    }
+    .b-cart-item__vendor-code{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: #000000;
+        @include media-breakpoint-down(md){
+            font-size: 18px;
+        }
+    }
+
+    .b-cart-item__row-counter-item{
+        width: 25%;
+        @include media-breakpoint-down(md){
+            width: 50%;
+        }
+    }
+    .b-cart-item__counter-input-wrap{
+        max-width: 100px;
+        min-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .b-cart-item__counter-input{}
+    .b-cart-item__row-item{}
+
+    .b-cart-item__row-delete-item{
+        width: 16%;
+        @include media-breakpoint-down(md){
+            width: 50%;
+        }
+    }
+    .b-cart-item__delete{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .b-cart-item__delete-btn{
+        border: none;
+        @include media-breakpoint-down(md){
+            width: 40px;
+            height: 40px;
+        }
+        &:hover{
+            path{
+                stroke:#FF4B6C;
+                fill:#FF4B6C;
+            }
+        }
+    }
+
+    .b-cart-item__price{
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 24px;
+        padding-right: 10px;
+        color: #2962FF;
+        &.b-cart-item__price_discount{
+            color: #FF4B6C;
+        }
+    }
+    .b-cart-item__old-price{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        text-decoration-line: line-through;
+        color: #BBC0D4;
+    }
+}
+.p-cart__message-block{
+    padding: 80px 120px;
+    border:1px solid #DADFF2;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    @include media-breakpoint-down(md){
+        padding: 60px 60px;
+    }
+    @include media-breakpoint-down(sm){
+        padding: 30px 15px;
+    }
+}
+.p-cart__message-block-icon{
+    padding-bottom: 40px;
+    text-align: center;
+}
+.p-cart__message-block-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.2 ;
+
+     text-align: center;
+
+    color: #2D3142;
+    padding-bottom: 10px;
+    @include media-breakpoint-down(md){
+        font-size: 26px;
+    }
+
+
+}
+.p-cart__message-block-description{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+
+    /* identical to box height, or 156% */
+    text-align: center;
+
+    color: #2D3142;
+    padding-bottom: 40px;
+    @include media-breakpoint-down(md){
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}
+ .p-cart__message-block-buttons{
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: -12px;
+     margin-right: -12px;
+     justify-content: center;
+ }
+.p-cart__message-block-button-item{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    @include media-breakpoint-down(md){
+        width: 100%;
+    }
+}
+.p-cart__message-block-button{
+    width: 100%;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include media-breakpoint-down(sm){
+        font-size: 14px;
+    }
+
+}
+
+

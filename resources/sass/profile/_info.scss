@@ -1,0 +1,64 @@
+.p-profile-info{
+
+
+
+
+    .p-profile-info__list{}
+
+    .p-profile-info__edit-btn{
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
+    }
+    .p-profile-info__edit{
+        padding-top: 40px;
+    }
+
+}
+
+.b-profile-card{
+
+}
+.b-profile-card__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2D3142;
+    padding-bottom: 24px;
+}
+.b-profile-card__list{
+
+}
+.b-profile-card__item{
+    padding-bottom: 12px;
+    &:last-child{
+        padding-bottom: 0px;
+    }
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3142;
+
+    display: flex;
+
+
+}
+.b-profile-card__item-title{
+    font-weight: 500;
+    width: 150px;
+}
+.b-profile-card__item-value{
+
+}
+.b-profile-card__item-value_empty{
+    color: #BBC0D4;
+}
+.b-profile-card__item-change-password{
+    padding-top: 12px;
+
+    .b-profile-card__item-title{
+        color: #1D2E72;
+        width: auto;
+    }
+}

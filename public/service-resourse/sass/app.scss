@@ -1,0 +1,263 @@
+@import '~bootstrap/scss/bootstrap';
+@import "sidebar";
+@import "breadcrumps";
+@import "admin-card";
+@import "order";
+
+
+.form-admin
+{
+  .form-group
+
+  {
+    &.has-error {
+    label {
+      //color: red;
+    }
+    input {
+      border: red 1px solid;
+    }
+    .help-block {
+      color: red;
+    }
+
+    .form-check.form-check-inline {
+       .checkbox {
+
+      }
+    }
+
+      .cke_3.cke.cke_reset{
+        border: red 1px solid;
+
+      }
+
+    }
+
+
+
+    .form-check.form-check-inline {
+       .checkbox {
+         padding-right: 15px;
+       }
+    }
+  }
+}
+
+.thumbnail-admin-image
+{
+  width: 100px;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.header-admin-button
+{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.language-tabs-wrapper {
+  border: 1px solid #969696;
+  padding: 0px 25px 0px;
+  margin-bottom: 15px;
+  .t-header {
+    padding: 30px 30px 30px 0px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+/*
+
+.sidebar-mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  display: none;
+}
+
+
+
+$mobile_sidebar_width : 300px;
+.sidebar-admin
+{
+  @media (min-width: 968px) {
+
+    left: -$mobile_sidebar_width !important;
+
+  }
+  //@include media-breakpoint-up(1200px) {
+  //  left: -$mobile_sidebar_width !important;
+  //}
+
+  width: $mobile_sidebar_width;
+  position: fixed !important;
+  top: 0;
+  left: -$mobile_sidebar_width;
+  height: 100%;
+  padding: 15px;
+  z-index: 999;
+  background: #7386D5;
+  background: #fff;
+  color: black;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+
+  @media (max-width: 480px) {
+    &.active{
+      width: 100%;
+    }
+
+  }
+
+  .dismiss {
+    &:hover {
+      transform: scale(1.2);
+
+    }
+    transition: all 0.5s ease ;
+    span{
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      line-height: 20px;
+      font-size: 40px;
+      color: black;
+    }
+    display: block;
+    position: absolute;
+    right: 6px;
+    padding: 9px;
+    top: 10px;
+    cursor: pointer;
+    color: #353f42;
+    z-index: 100;
+
+  }
+
+
+
+
+
+  &.active {
+    left: 0;
+  }
+
+  .sidebar-header {
+    padding-bottom: 15px;
+  }
+
+
+
+
+}
+*/
+
+.transition-style
+{
+  transition: all 0.2s ease;
+}
+
+
+$sidebarWidth :70px;
+@media (min-width: 768px) {
+  .admin-content-wrap.hide-sidebar{
+  }
+  .admin-content-wrap.hide-sidebar .sidebar-admin-wrap{
+    flex-basis: $sidebarWidth  !important;
+    -ms-flex: 0 0 $sidebarWidth ;
+    flex: 0 0  $sidebarWidth ;
+    max-width:  $sidebarWidth ;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .admin-content-wrap.hide-sidebar  .admin-content-wrap {
+    -ms-flex: 0 0 calc( 100% - #{$sidebarWidth} )  !important;
+    flex: 0 0 calc( 100% - #{$sidebarWidth} )  !important;
+    max-width: calc( 100% - #{$sidebarWidth} )  !important;
+  }
+
+}
+
+.admin-login-card{
+  border:none;
+  background: white;
+  .admin-login-card__header{
+    background: unset;
+    text-align: center;
+    border: none;
+  }
+
+
+
+}
+
+.admin-login-form{
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto";
+
+  .input-group-text{
+    background: none;
+    border: none;
+  }
+
+  .admin-login-form__input{
+    border: none;
+    box-shadow: none !important;
+    font-size: 16px;
+
+    color: rgb(29, 29, 27);
+    font-weight: bold;
+    &::placeholder{
+      //font-size: 16px;
+      font-weight: normal;
+      color: rgb(151, 151, 151);
+    }
+  }
+
+  .admin-login-form__input:focus +  .admin-login-form__input-underline{
+    border-top: 1px solid rgba(10, 173, 75, 0.65);
+  }
+  .admin-login-form__input.is-invalid +  .admin-login-form__input-underline{
+    border-top: 1px solid rgba(255, 0, 0, 0.65);
+  }
+  .admin-login-form__input-underline{
+    width: 100%;
+    margin: 0;
+    transition: all 0.2s ease;
+
+  }
+
+  .admin-login-form__submit{
+    font-size: 24px;
+    color: rgb(29, 29, 27);
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: none !important;
+    padding-right: 50px;
+    background-image: url("/service-resourse/images/login_form/submit.png");
+    background-repeat: no-repeat;
+    background-position: right , center;
+    &:hover{
+      background-image: url("/service-resourse/images/login_form/submit_hover.png");
+      background-repeat: no-repeat;
+      background-position: right , center;
+    }
+  }
+
+}

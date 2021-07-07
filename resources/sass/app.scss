@@ -1,0 +1,63 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "bootstrap/gutters";
+@import "global";
+@import '~swiper/swiper-bundle.css';
+@import '~nouislider/distribute/nouislider.css';
+@import '~simplebar/dist/simplebar.css';
+@import "~select2/dist/css/select2.css";
+@import '~magnific-popup/dist/magnific-popup.css';
+
+
+
+//@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600;1,900&display=swap');
+body{
+    font-family: 'Fira Sans', sans-serif;
+    color: #1D2E72;;
+}
+
+
+@import "footer";
+@import "header";
+@import "main-page";
+@import "product_item";
+@import "auth";
+@import "catalog";
+@import "pages";
+@import "cart";
+@import "modals";
+@import "product";
+@import "product_search";
+@import "profile";
+@import "mobile-menu";
+@import "404";
+@import "landing_page";
+
+
+
+
+
+.simplebar-track.simplebar-vertical {
+    width: 4px;
+    background: #e6e6e6;
+    border-radius: 2px;
+}
+.simplebar-scrollbar.simplebar-visible {
+    /*! background-color: #ab0112; */
+    //left: 0;
+    //right: 0;
+}
+
+.simplebar-scrollbar.simplebar-visible::before{
+    background-color: #2962FF;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    right: 0;
+}

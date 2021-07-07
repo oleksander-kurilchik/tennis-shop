@@ -1,0 +1,43 @@
+.b-search-form{
+
+}
+.b-search-form__submit{
+      @extend .btn;
+    padding: 6px;
+    box-shadow: none !important;
+
+
+    &:hover{
+        path,circle {
+            stroke:#2962FF;
+        }
+    }
+}
+.b-search-form__input{
+    padding: 10px 0px;
+    padding-left: 6px;
+    border: none !important;
+    transition: all 0.2s ease;
+    width: 65px !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height, or 125% */
+
+    color: #2D3142;
+    &::placeholder{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+}
+.b-search-form__input_active{
+    width: 150px !important;
+}
+.b-search-form__submit-icon{
+    &:hover{}
+}

@@ -1,0 +1,242 @@
+//.select2-dropdown.select2-dropdown__custom
+//{
+//    color:  rgb(153, 159, 147);;
+//    background-color: #fff;
+//    font-size: 14px;
+//    border-radius: 0;
+//    border: 1px solid #c0c0c059;
+//
+//    .select2-search--dropdown .select2-search__field{
+//        background: #fff;
+//    }
+//
+//
+//    .select2-results__option
+//    {
+//        word-wrap: break-word;
+//        overflow: hidden;
+//        background-color: #fff;
+//        color: #888888;
+//        font-size: 13px;
+//        font-weight: 400;
+//        border-bottom: 1px solid #fff;
+//    }
+//
+//    .select2-results__option
+//    {
+//        //color: rgb(153, 159, 147);
+//        //background-color: #f9f9f9;
+//        //font-size: 14px;
+//    }
+//    .select2-results__option[aria-selected="true"]
+//    {
+//        color: #000000;
+//        font-size: 13px;
+//        font-weight: 400;
+//
+//    }
+//    .select2-results__option:hover,.select2-results__option--highlighted[aria-selected]
+//    {
+//        color: #000000;
+//        background-color:  #fff;;
+//    }
+//    .select2-results__option:hover{
+//        .select2-results__option-text {
+//            text-decoration: underline;
+//        }
+//    }
+//
+//
+//}
+//
+//.select2.select2-container {
+//    .select2-container__custom {
+//        border: 2px solid #e6e6e6;
+//        border-radius: 0;
+//        //height: auto;
+//        height: 50px;
+//
+//
+//        .select2-selection__rendered {
+//            padding: 17px 20px;
+//            padding-right: 18px;
+//            padding-right: 20px;
+//            font-weight: 400;
+//            font-size: 14px;
+//            line-height: 18px;
+//
+//            /* identical to box height, or 129% */
+//
+//            color: #BBC0D4;
+//        }
+//        .select2-selection__arrow {
+//            height: 50px ;
+//            width: 50px ;
+//            b {
+//                transition: all ease 0.2s;
+//                border-color: #ccc transparent transparent transparent;
+//                border-style: solid;
+//                border-width: 8px 8px 0 8px;
+//                height: 0;
+//                left: 50%;
+//                margin-left: -7px;
+//                margin-top: -4px;
+//                position: absolute;
+//                top: 50%;
+//                width: 0;
+//            }
+//        }
+//    }
+//    &.select2-container--open .select2-container__custom .select2-selection__arrow b{
+//        transform: rotate(180deg);
+//    }
+//}
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////
+
+
+
+
+
+.select2-dropdown.select2-dropdown__custom-primary
+{
+    color:  rgb(153, 159, 147);;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    border: 1px solid #c0c0c059;
+
+    .select2-search--dropdown .select2-search__field{
+        background: #fff;
+    }
+
+
+    .select2-results__option
+    {
+        word-wrap: break-word;
+        overflow: hidden;
+        background-color: #fff;
+        font-weight: 400;
+        border-bottom: 1px solid #fff;
+        padding: 0px 20px;
+        line-height: 34px;
+        font-size: 14px;
+
+        /* identical to box height, or 129% */
+
+        color: #1D2E72;
+    }
+
+    .select2-results__option
+    {
+        //color: rgb(153, 159, 147);
+        //background-color: #f9f9f9;
+        //font-size: 14px;
+    }
+    .select2-results__option[aria-selected="true"]
+    {
+        color: #2962FF;
+        background: #E0EDFF;
+
+    }
+    .select2-results__option:hover,.select2-results__option--highlighted[aria-selected]
+    {
+        color: #2962FF;
+        background: #E0EDFF;
+    }
+    .select2-results__option:hover{
+        .select2-results__option-text {
+            text-decoration: underline;
+        }
+    }
+
+
+}
+
+.select2.select2-container {
+    //min-width: 300px;
+    .select2-container__custom-primary {
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+        border-radius: 0;
+        //height: auto;
+        height: 50px;
+        outline: none !important;
+
+
+        .select2-selection__rendered {
+            padding: 18px 20px;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+
+            padding-right: 50px;
+            color: #1D2E72;
+
+
+
+        }
+        .select2-selection__placeholder{
+            color: #BBC0D4;
+        }
+
+        .select2-selection__arrow {
+            height: 50px ;
+            width: 50px ;
+            //background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.75078 0.125C4.91693 -0.0416665 5.08307 -0.0416665 5.24922 0.125L9.85981 4.71875C10.0467 4.90625 10.0467 5.08333 9.85981 5.25L9.26791 5.875C9.081 6.04167 8.90446 6.04167 8.73832 5.875L5 2.15625L1.26168 5.875C1.09553 6.04167 0.919003 6.04167 0.732087 5.875L0.140187 5.25C-0.046729 5.08333 -0.046729 4.90625 0.140187 4.71875L4.75078 0.125Z' fill='%231D2E72'/%3E%3C/svg%3E%0A");
+            //background-repeat: no-repeat;
+            //background-position: center;
+            b {
+                transition: all ease 0.2s;
+                //border-color: #ccc transparent transparent transparent;
+                //border-style: solid;
+                //border-width: 8px 8px 0 8px;
+                //height: 0;
+                //left: 50%;
+                //margin-left: -7px;
+                //margin-top: -4px;
+                //position: absolute;
+                //top: 50%;
+                //width: 0;
+                border: none;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.75078 5.875C4.91693 6.04167 5.08307 6.04167 5.24922 5.875L9.85981 1.28125C10.0467 1.09375 10.0467 0.916667 9.85981 0.75L9.26791 0.125C9.081 -0.0416667 8.90446 -0.0416667 8.73832 0.125L5 3.84375L1.26168 0.125C1.09553 -0.0416667 0.919003 -0.0416667 0.732087 0.125L0.140187 0.75C-0.046729 0.916667 -0.046729 1.09375 0.140187 1.28125L4.75078 5.875Z' fill='%231D2E72'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                left: 0;
+                top: 0;
+                display: block;
+            }
+        }
+    }
+    &.select2-container--open .select2-container__custom-primary .select2-selection__arrow b{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+
+
+
+
+

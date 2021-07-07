@@ -1,0 +1,66 @@
+@import "globals/buttons";
+@import "globals/mixins";
+@import "globals/spinbox";
+@import "globals/pagination";
+@import "globals/lists";
+@import "globals/slider";
+@import "globals/forms";
+@import "globals/checkbox";
+@import "globals/breadcrumbs";
+@import "globals/page_title";
+@import "globals/tags";
+@import "globals/card-list";
+@import "globals/range-slider";
+@import "globals/selected-list";
+@import "globals/select2";
+@import "globals/message-block";
+@import "globals/b-search-form";
+
+
+
+.b-counter-block{
+
+    .b-counter-block__title{
+        font-size: 12px;
+        line-height: 14px;
+        color: #595959;
+        text-align: center;
+        padding-bottom: 3px;
+    }
+    .b-counter-block__input-counter{
+        max-width: 115px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+
+}
+.container-p20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.b-alert-container {}
+.b-alert{
+    border-radius: 0;
+    border: solid 1px #ccc !important;
+    font-size: 18px;
+    @include media-breakpoint-down(md){
+        font-size: 14px;
+    }
+}
+
+a{
+    color: #1D2E72;
+}
+
+
+
+
+.pb-20{
+    padding-bottom: 20px;
+}

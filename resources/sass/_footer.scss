@@ -1,0 +1,130 @@
+
+.b-footer{
+    border: none;
+    border-top:1px solid #DADFF2 ;
+    background: #fff;
+    .b-footer__container{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        @include media-breakpoint-down(md){
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+
+    }
+    .b-footer__row{
+        align-items: center;
+        justify-content: space-between;
+
+         & > * {
+             flex: 0 0 auto;
+             width: auto;
+             max-width: 100%;
+             @include media-breakpoint-down(md){
+                 flex: 0 0 100%;
+                 width: 100%;
+             }
+         }
+
+    }
+
+
+    .b-footer__logo{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .b-footer__logo-link{}
+    .b-footer__logo-img{
+        @include media-breakpoint-down(lg){
+            width: 160px;
+        }
+    }
+    .b-footer__menu{padding-top: 15px;
+        padding-bottom: 15px;}
+    .b-footer__menu-list{
+        @extend .nav;
+        flex-wrap: wrap;
+    }
+    .b-footer__menu-item{
+        @extend .nav-item;
+        //padding-left: 12px;
+        padding-right: 24px;
+        @include media-breakpoint-only(lg){
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+        @include media-breakpoint-down(sm){
+            width: 50%;
+        }
+        @include media-breakpoint-down-370{
+            width: auto;
+            padding-right: 12px;
+        }
+    }
+    .b-footer__menu-item-link{
+         font-weight: 500;
+        font-size: 16px;
+        line-height:1.2;
+        color: #1D2E72;
+        @include media-breakpoint-between(lg, xl){
+            font-size: 14px;
+        }
+        @include media-breakpoint-down-370{
+            font-size: 14px;
+        }
+    }
+    .b-footer__social-and-payment{
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .b-footer__social-list{
+        display: flex;
+        flex-wrap: wrap;
+        border-right: 1px solid #DADFF2;
+        padding-right: 15px;
+    }
+    .b-footer__social-item{
+        padding-left: 12px;
+        padding-right: 12px;
+        &:first-child{
+            padding-left: 0;
+        }
+    }
+    .b-footer__social-link{}
+    .b-footer__social-image{
+        width: 30px;
+        height: auto;
+        @include media-breakpoint-down(lg){
+            width: 25px;
+        }
+    }
+    .b-footer__payment-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+    .b-footer__payment-item{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .b-footer__payment-item-img{}
+    .b-footer__payment-item-img-visa{
+        width: 74px;
+        @include media-breakpoint-down(lg){
+            width: 62px;
+        }
+    }
+    .b-footer__payment-item-img-mastercard{
+        width: 41px;
+        @include media-breakpoint-down(lg){
+            width: 35px;
+        }
+    }
+
+
+
+
+
+
+}

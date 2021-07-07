@@ -1,0 +1,238 @@
+@mixin m-page-title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+@mixin m-page-title-description{
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+    padding-top: 10px;
+
+
+}
+@mixin m-page-title-block{
+    padding-bottom: 60px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 30px;
+    }
+}
+
+@mixin media-breakpoint-down-370() {
+
+    @media (max-width: 369.999px) {
+        @content;
+    }
+
+}
+
+
+@mixin m-bordered-block{
+    border: 1px solid #CCCCCC;
+    padding: 60px;
+    @include media-breakpoint-down(md){
+        padding: 40px 20px;
+    }
+
+}
+
+@mixin m-card-item($prefix){
+    .#{$prefix}item{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+    .#{$prefix}item-title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+        @include media-breakpoint-down(md){
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+    }
+    .#{$prefix}item-description{
+        font-size: 16px;
+        line-height: 1.3;
+        color: #595959;
+        padding-left: 10px;
+        @include media-breakpoint-down(md){
+            font-size: 14px;
+            line-height: 20px;
+        }
+        @content
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin m-link-list-primary($prefix){
+    .#{$prefix}list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+    .#{$prefix}item{
+       padding-left: 16px;
+       padding-right: 16px;
+
+    }
+    .#{$prefix}item-link{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.3;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        color: #595959;
+        padding-bottom: 6px;
+        position: relative;
+        text-decoration: none ;
+        &:hover{
+            color: #000000;
+            text-decoration: none ;
+        }
+
+
+        &.#{$prefix}item-link_active{
+            color: #000000;
+            text-decoration: none ;
+            &:before{
+                width: 100%;
+            }
+        }
+
+        &:before{
+            transition: all ease 0.2s;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background: #2962FF;
+
+        }
+
+    }
+
+
+    @content
+}
+
+
+
+//.row-40{
+//    margin-left: -20px;
+//    margin-right: -20px;
+//}
+
+
+@mixin make-grid-columns-40($columns: $grid-columns ,  $breakpoints: $grid-breakpoints) {
+    // Common properties for all breakpoints
+    $gutter: 40px;
+    %grid-column {
+        position: relative;
+        width: 100%;
+        padding-right: $gutter / 2;
+        padding-left: $gutter / 2;
+    }
+
+    @each $breakpoint in map-keys($breakpoints) {
+        $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+        @if $columns > 0 {
+            // Allow columns to stretch full width below their breakpoints
+            @for $i from 1 through $columns {
+                .col#{$infix}-#{$i} {
+                    @extend %grid-column;
+                }
+            }
+        }
+
+        .col#{$infix},
+        .col#{$infix}-auto {
+            @extend %grid-column;
+        }
+
+        //@include media-breakpoint-up($breakpoint, $breakpoints) {
+        //    // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+        //    .col#{$infix} {
+        //        flex-basis: 0;
+        //        flex-grow: 1;
+        //        min-width: 0; // See https://github.com/twbs/bootstrap/issues/25410
+        //        max-width: 100%;
+        //    }
+        //
+        //    @if $grid-row-columns > 0 {
+        //        @for $i from 1 through $grid-row-columns {
+        //            .row-cols#{$infix}-#{$i} {
+        //                @include row-cols($i);
+        //            }
+        //        }
+        //    }
+        //
+        //    .col#{$infix}-auto {
+        //        @include make-col-auto();
+        //    }
+        //    //
+        //    //@if $columns > 0 {
+        //    //    @for $i from 1 through $columns {
+        //    //        .col#{$infix}-#{$i} {
+        //    //            @include make-col($i, $columns);
+        //    //        }
+        //    //    }
+        //    //}
+        //    //
+        //    //.order#{$infix}-first { order: -1; }
+        //    //
+        //    //.order#{$infix}-last { order: $columns + 1; }
+        //    //
+        //    //@for $i from 0 through $columns {
+        //    //    .order#{$infix}-#{$i} { order: $i; }
+        //    //}
+        //    //
+        //    //@if $columns > 0 {
+        //    //    // `$columns - 1` because offsetting by the width of an entire row isn't possible
+        //    //    @for $i from 0 through ($columns - 1) {
+        //    //        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+        //    //            .offset#{$infix}-#{$i} {
+        //    //                @include make-col-offset($i, $columns);
+        //    //            }
+        //    //        }
+        //    //    }
+        //    //}
+        //}
+    }
+}
+.row-40{
+    margin-left: -20px;
+    margin-right: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    @include make-grid-columns-40;
+}

@@ -1,0 +1,41 @@
+@import 'profile/info';
+@import 'profile/edit';
+@import 'profile/wishlist';
+@import 'profile/orders';
+@import 'profile/change-password';
+
+.p-profile {
+    .p-profile__container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #F3F8FF;
+    }
+    .p-profile__menu {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid #DADFF2;
+
+
+        @include media-breakpoint-down(md){
+        .b-list-default__item{
+            @include media-breakpoint-down(md){
+                width: 100%;
+                margin-bottom: 10px;
+                border-right: 1px solid #DADFF2;
+            }
+        }
+        .b-list-default__link{
+            @include media-breakpoint-down(md){
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
+
+        }
+
+
+    }
+
+}

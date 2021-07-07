@@ -1,0 +1,93 @@
+.page-errors-container{
+  .error-code {
+    font-size: 120px;
+    color: rgb(70, 70, 80);
+    font-weight: 800;
+    line-height: 1;
+   }
+
+  @media (max-width: 480px) {
+    .error-code {
+      font-size: 100px;
+    }
+
+  }
+
+
+  .error-message {
+    font-size: 24px;
+    color: rgb(70, 70, 80);
+    font-weight: 300;
+    padding-bottom: 30px;
+   }
+
+  @media (max-width: 480px) {
+    .error-message {
+      font-size: 20px;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .text-sm-down-center {
+      text-align: center;
+    }
+
+  }
+
+  .button-go-home {
+    @extend .button-default-primary;
+  }
+
+  .logo-image {
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  .logo-wrap {
+    padding: 20px;
+    text-align: center;
+  }
+.first-column{
+  text-align: center;
+  height: 100%;
+  @include media-breakpoint-up(md){
+    min-height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+  }
+  padding-bottom: 30px;
+}
+  .second-column{
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    min-height: 300px;
+    @include media-breakpoint-up(md){
+      min-height: 100vh;
+    }
+    padding: 0;
+  }
+
+
+  .background-404-image-left{
+    background-image: url("/images/error/404.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+  }
+  .row-error-content{
+    min-height: 100vh;
+  }
+
+
+}

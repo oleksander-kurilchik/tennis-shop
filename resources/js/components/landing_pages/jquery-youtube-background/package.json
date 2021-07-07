@@ -1,0 +1,55 @@
+{
+  "_from": "jquery-youtube-background@^1.0.0",
+  "_id": "jquery-youtube-background@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-be0oWY5nyDjM7JbhKofwXKb1hNM=",
+  "_location": "/jquery-youtube-background",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "jquery-youtube-background@^1.0.0",
+    "name": "jquery-youtube-background",
+    "escapedName": "jquery-youtube-background",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-youtube-background/-/jquery-youtube-background-1.0.0.tgz",
+  "_shasum": "6ded28598e67c838ccec96e12a87f05ca6f584d3",
+  "_spec": "jquery-youtube-background@^1.0.0",
+  "_where": "/var/www/trek/sim23.loc",
+  "author": {
+    "name": "rochestb"
+  },
+  "bugs": {
+    "url": "https://github.com/rochestb/jQuery.YoutubeBackground/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Creates fullscreen background videos based on the Youtube API",
+  "homepage": "https://github.com/rochestb/jQuery.YoutubeBackground#readme",
+  "keywords": [
+    "jquery",
+    "youtube",
+    "background",
+    "video",
+    "video",
+    "background"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "jquery-youtube-background",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rochestb/jQuery.YoutubeBackground.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

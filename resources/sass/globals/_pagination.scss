@@ -1,0 +1,69 @@
+.b-pagination.pagination{
+    flex-wrap: wrap;
+    justify-content: center;
+    .page-item{
+        padding: 6px;
+
+
+        &.active, &:hover {
+            .page-link {
+                 border: 1px solid #2962FF;
+
+                color: #1D2E72;
+            }
+        }
+        &.disabled{
+            .page-link {
+                 border: 1px solid #DADFF2;
+            }
+            path{
+                stroke:#BBC0D4 ;
+            }
+        }
+        &.arrow-left{
+            padding-right: 24px;
+            @include media-breakpoint-down(md){
+                padding-right: 16px;
+            }
+        }
+        &.arrow-right{
+            padding-left: 24px;
+            @include media-breakpoint-down(md){
+                padding-left: 16px;
+            }
+        }
+    }
+    .page-link{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #DADFF2;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1D2E72;
+        font-size: 20px;
+        line-height: 26px;
+        @include media-breakpoint-down(md){
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+    }
+
+
+
+}
+
+.pagination-container {
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    @include media-breakpoint-down(md){
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}

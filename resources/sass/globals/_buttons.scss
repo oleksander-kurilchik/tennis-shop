@@ -1,0 +1,172 @@
+.button-default {
+    @extend .btn;
+    border-radius: 0;
+    padding: 20px 41px;
+    border: 1px solid  #2962FF;;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: unset;
+    background-color:#2962FF; ;
+    &:hover {
+        background: #2962FF;
+        color: #fff;
+    }
+    &:focus{
+
+    }
+
+    &.button-default_sm{
+        padding: 13px 30px;
+        min-height: 50px;
+    }
+
+    &.button-default_xl{
+        font-size: 20px;
+        padding: 22px 40px;
+        line-height: 24px;
+    }
+
+}
+
+.button-default-circle{
+
+    @extend .btn;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border: 1px solid #DADFF2;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: unset;
+
+    &:hover{
+        border: 1px solid #dadff2;
+    }
+    &:focus{
+        //box-shadow: 0 0 0 0.1rem #2962FF33;
+        box-shadow: unset;
+    }
+
+    &.button-default_sm , &.button-default-circle_sm{
+        width: 50px;
+        height: 50px;
+    }
+
+    &.button-default_xl , &.button-default-circle_xl{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+
+
+.button-default-primary {
+    @extend .btn;
+    border-radius: 0;
+    padding: 20px 41px;
+    border: 1px solid #DADFF2;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #1d2e72;
+    box-shadow: unset;
+    background-color:#fff; ;
+    &:hover {
+        border: 1px solid #2962FF;
+        path{
+            stroke:#0044FF
+        }
+    }
+    &:focus{
+        path{
+            fill:   #2962FF
+        }
+
+    }
+
+    &.button-default-primary_sm{
+        padding: 13px 30px;
+        min-height: 50px;
+    }
+
+    &.button-default-primary_xl{
+        font-size: 20px;
+        padding: 22px 40px;
+        line-height: 24px;
+    }
+
+}
+
+.button-default_link{
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #595959;
+}
+
+
+
+
+
+.b-image-primary-btn{
+    display: inline-block;
+    text-decoration: none !important;
+
+    .b-image-primary-btn__logo{
+        display: inline-block;
+        position: relative;
+    }
+    .b-image-primary-btn__logo-img{
+        width: 24px;
+        height: auto;
+    }
+    .b-image-primary-btn__title{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2D3142;
+        padding-left: 10px;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+    .b-image-primary-btn__qty{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #2962FF;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 20px;
+        top: -5px;
+        right: -7px;
+
+
+    }
+
+}
+

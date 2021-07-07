@@ -1,0 +1,45 @@
+.p-page {
+    background: #F2F2F2;
+    padding-bottom: 100px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 70px;
+    }
+    @include media-breakpoint-down(xs){
+        padding-bottom: 30px;
+    }
+   .p-page__content{}
+   .p-page__content-block{
+       background: #FFFFFF;
+       border: 1px solid #DADFF2;
+       padding: 100px 270px;
+
+       @include media-breakpoint-down(xl){
+           padding: 80px 120px;
+       }
+       @include media-breakpoint-down(lg){
+           padding: 70px 80px;
+       }
+       @include media-breakpoint-down(md){
+           padding: 50px 60px;
+       }
+       @include media-breakpoint-down(sm){}
+       @include media-breakpoint-down(xs){
+           padding: 30px 15px;
+       }
+   }
+}
+.p-page__content-description{
+    font-size: 18px;
+    line-height: 1.5;
+
+    @include media-breakpoint-down(md){
+        font-size: 16px;
+     }
+    @include media-breakpoint-down(xs){
+        font-size: 14px;
+    }
+
+
+
+
+}

@@ -1,0 +1,52 @@
+.p-profile-edit-data__form-row {
+    display: flex;
+
+    flex-wrap: wrap;
+    @include media-breakpoint-up(lg) {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+.p-profile-edit-data__form-col {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 50%;
+    }
+
+}
+
+.p-profile-edit-data__form {
+    max-width: 800px;
+}
+
+.p-profile-edit-data__form-col-100 {
+    @include media-breakpoint-up(lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-profile-edit-data__form-submit-wrap {
+    @include media-breakpoint-up(lg) {
+        padding-right: 20px;
+    }
+}
+
+.p-profile-edit-data__cancel-wrap {
+}
+
+.p-profile-edit-data__form-submit-wrap, .p-profile-edit-data__cancel-wrap {
+    padding-bottom: 20px;
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        & > * {
+            width: 100%;
+        }
+    }
+}

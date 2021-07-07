@@ -1,0 +1,72 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.3);
+
+    // Fade for backdrop
+    &.fade { opacity: 0; }
+    &.show { opacity: 1 }
+}
+
+.b-site-modal-dialog{
+    .modal-header{
+     border-bottom: unset;
+    }
+
+    .modal-content{
+        border-radius: 0;
+        //border-color:  #888;
+        padding: 60px 70px;
+        padding-top: 50px;
+        border: 1px solid #DADFF2;
+        @include media-breakpoint-down(md){
+            padding: 15px 0px;
+            padding-top: 30px;
+        }
+    }
+
+    .b-site-modal__title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        color: #2D3142;
+        @include media-breakpoint-down(md){
+            font-size: 21px;
+        }
+    }
+    .b-site-modal__description{
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+        color: #2D3142;
+    }
+
+    .modal-footer{
+        border-top: unset;
+
+        .button-default{
+            @include media-breakpoint-down-370{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    .b-site-modal__logo {
+        text-align: center;
+    }
+    .modal-lg {
+        max-width: 900px;
+    }
+
+}
+
+
+
+.b-cart-add-modal__product-logo {
+    text-align: center;
+}

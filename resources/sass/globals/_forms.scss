@@ -1,0 +1,269 @@
+.form-group__default{
+margin-bottom: 20px;
+
+
+}
+.form-control__label{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2D3142;
+    margin-bottom: 10px;
+
+}
+.form-control__default{
+    @extend .form-control;
+    border-radius: 0;
+    border: 1px solid #DADFF2;
+    color:   #2D3142;;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 16px 20px;
+    height: auto;
+
+
+
+    box-shadow: none !important;
+
+    &::placeholder{
+        font-size: 14px;
+        line-height: 16px;
+        color: #BBC0D4;
+    }
+
+    &:focus{
+        border: 1px solid #c9c9c9;
+        color: #000000;
+    }
+
+}
+select.form-control__default{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+
+    background: #fff
+    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgMTIgNiI+PGc+IDxwYXRoIGZpbGw9IiNjY2MiIGQ9Ik0xMiAwTDYgNiAwIDB6Ii8+PC9nPiA8L3N2Zz4=')
+    no-repeat right .75rem center/8px 10px;
+}
+
+
+
+
+
+
+.form-radio__default{
+    padding-left: 0;
+    .form-radio-input__default{
+        display: none;
+    }
+    .form-radio-input__default:checked ~ .form-radio-label__default {
+        color: #050533;
+         &:before{
+             border: 2px solid #2962FF;
+             background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%232962FF'/%3E%3C/svg%3E%0A");
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: 60%;
+        }
+        //&:after{
+        //    background-color: #ab0112;
+        //}
+    }
+
+    .form-radio-label__default{
+        padding-left: 25px;
+        position: relative;
+        font-size: 16px;
+        line-height: 1.2;
+
+
+        color: #1D2E72;
+        &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #BBC0D4;
+            transition: all ease 0.2s;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        //&:after{
+        //    display: block;
+        //    position: absolute;
+        //    content: '';
+        //    width: 8px;
+        //    height: 8px;
+        //    border-radius: 50%;
+        //    left: 9px;
+        //    top: 9px;
+        //    background-color: #fff;
+        //    transition: all ease 0.2s;
+        //    transform: translate(-50%, -50%);
+        //
+        //}
+    }
+}
+
+
+
+
+
+
+
+
+//
+//
+//
+//
+.form-checkbox__default{
+    padding-left: 0;
+    .form-checkbox-input__default{
+        display: none;
+    }
+    .form-checkbox-input__default:checked ~ .form-checkbox-label__default {
+        color: #050533;
+        &:before{
+
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.03924 8.91017L11.9078 1.24659C12.0307 1.12683 12.0307 0.932595 11.9078 0.812802L11.1655 0.089826C11.0425 -0.029942 10.8431 -0.029942 10.7201 0.089826L3.81655 6.81353L1.27995 4.34301C1.15696 4.22322 0.957556 4.22322 0.834534 4.34301L0.0922476 5.06597C-0.0307492 5.18576 -0.0307492 5.37996 0.0922476 5.49978L3.59385 8.91017C3.71682 9.02994 3.91622 9.02994 4.03924 8.91017Z' fill='%23595959'/%3E%3C/svg%3E%0A");
+
+        }
+    }
+
+
+
+    .form-checkbox-label__default{
+        padding-left: 25px;
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #cccccc;
+            transition: all ease 0.2s;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+.form-checkbox-primary{
+    padding-left: 0;
+    .form-checkbox-primary__input-default{
+        display: none;
+    }
+    .form-checkbox-primary__input-default:checked ~ .form-checkbox-primary__label-default {
+        color: #2962FF;
+        &:before{
+            border: 2px solid #2962FF;
+
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1L3.5 7L1 4.27273' stroke='%232962FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");        }
+    }
+
+
+
+    .form-checkbox-primary__label-default{
+        padding-left: 30px;
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        //color: #2962FF;
+        color: #1D2E72;
+        &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 18px;
+            height: 18px;
+            //border: 2px solid #2962FF;
+            border: 2px solid #BBC0D4;
+            transition: all ease 0.2s;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+////for delete
+.input-group__default{
+
+
+    .form-control__default{
+        position: relative;
+        z-index: 0;
+    }
+
+    .input-group-append{
+        position: relative;
+        z-index: 4;
+        left: -1px;
+        .input-group__default-btn{
+            border-top: #DADFF2 solid 1px;
+            border-bottom: #DADFF2 solid 1px;
+            //border-right: #DADFF2 solid 1px;
+        }
+    }
+
+    .input-group-prepend{
+        position: relative;
+        z-index: 4;
+        right: -1px;
+        .input-group__default-btn{
+            border-top: #DADFF2 solid 1px;
+            border-bottom: #DADFF2 solid 1px;
+            //border-left: #DADFF2 solid 1px;
+        }
+    }
+
+
+    .input-group__default-btn{
+        border: none;
+        background: #fff;
+        //border-top: #ccc solid 1px;
+        //border-bottom: #ccc solid 1px;
+        //border-right: #ccc solid 1px;
+        padding-left: 20px;
+        padding-right: 20px;
+        outline: unset;
+    }
+
+
+}
